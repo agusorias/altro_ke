@@ -10,11 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
 </head>
 <body>
-	<div class="positionSticky">
-		<!-- Logo Principal -->
-		<header>
-			<a href="index.html"><img src="img/imgaltro1.jpg" alt="Logo Altro-Ke" class="logo sobreClick"></a>
-		</header>
+	<header class="positionSticky">
 
 		<!-- Barra de Menú -->
 		<nav class="navbar navbar-expand-lg">		
@@ -25,10 +21,18 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto tituloNav centrado" id="menu">
 		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="index.html">Home</a>
+		        		<a class="navbar-brand sobreClick" href="index.html">
+    						<img src="img/imgaltrologo.png" width="90" height="40" alt="Logo" loading="lazy">
+  						</a>
 		     		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="nosotros.html">Nosotros</a>
+		      		<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle sobreClick" href="nosotros.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Nosotros
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#general">Inspiración</a>
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#conocenos">Conocenos</a>
+				        </div>	        		
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link sobreClick" href="tumusica.html">¿Qué ofrecemos?</a>
@@ -42,32 +46,35 @@
 		    	</ul>
 			</div>
 		</nav>
-	</div>
+	</header>
 
+	<!-- Sección Única y Principal-->
 	<main>
-		<!-- Sección Única y Principal -->
-		<h1 class="slogan">"Tu evento, tu música."</h1>
-		<section class="pantallaCompleta padreGrid fondoLogo container-fluid">
-			<div id="vacio"></div>
-			<div id="face">
-				<a href="https://www.instagram.com/altro_ke" target="_blank"><img src="img/instagram.png" alt="logo de instagram" class="imagenLink" ></a>
-			</div>
-			<div id="textoface">
-				<p class="textoLink">¡Seguinos y mirá nuestro contenido!</p>
-			</div>
-			<div id="inst">
-				<a href="https://www.facebook.com/Altro-Ke-1485898511546734" target="_blank"><img src="img/facebook.png" alt="logo de instagram" class="imagenLink"></a>
-			</div>
-			<div id="textoinst">
-				<p class="textoLink">¡También podés encontrarnos en Facebook!</p>
-			</div>
-		</section>
+		<div class="card bg-dark text-black">
+			<img src="img/matiaguscinco.jpg" class="card-img aclarar" alt="foto de banda">
+  			<div class="card-img-overlay">
+    			<h1 class="card-title titulo centrado">Tu evento, tu música.</h1>
+  			</div>
+		</div>
 	</main>
 
 	<!-- Pie de página -->
-	<footer class="fondoGris anchoCompleto">
-			<p class="centrado">Copyright - Altro-Ke®</p>
+	<footer>
+		<div class="container-fluid fondoGris">
+			<div class="row justify-content-md-center altura">
+		    	<div class="col-md-auto">
+		    		Copyright - Altro-Ke®
+		    	</div>
+		  	</div>
+			<div class="row justify-content-md-center alturaDos">
+		    	<div class="col-md-auto">
+		      		<a href="https://www.instagram.com/altro_ke" target="_blank"><img src="img/instagramdos.png" alt="logo de instagram" class="imagenLink img-fluid" ></a>
+		      		<a href="https://www.facebook.com/Altro-Ke-1485898511546734" target="_blank"><img src="img/facebookdos.png" alt="logo de instagram" class="imagenLink img-fluid"></a>
+		    	</div>
+		  	</div>
+		</div>
 	</footer>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

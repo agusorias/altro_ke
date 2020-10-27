@@ -10,11 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
 </head>
 <body>
-	<div class="positionSticky">
-		<!-- Logo Principal -->
-		<header>
-			<a href="index.html"><img src="img/imgaltro1.jpg" alt="Logo Altro-Ke" class="logo sobreClick"></a>
-		</header>
+	<header class="positionSticky">
 
 		<!-- Barra de Menú -->
 		<nav class="navbar navbar-expand-lg">		
@@ -25,10 +21,18 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto tituloNav centrado" id="menu">
 		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="index.html">Home</a>
+		        		<a class="navbar-brand sobreClick" href="index.html">
+    						<img src="img/imgaltrologo.png" width="90" height="40" alt="Logo" loading="lazy">
+  						</a>
 		     		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="nosotros.html">Nosotros</a>
+		      		<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle sobreClick" href="nosotros.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Nosotros
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#general">Inspiración</a>
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#conocenos">Conocenos</a>
+				        </div>	        		
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link sobreClick" href="tumusica.html">¿Qué ofrecemos?</a>
@@ -42,13 +46,13 @@
 		    	</ul>
 			</div>
 		</nav>
-	</div>
+	</header>
 
 	<main>
 		<h1 class="titulo centrado">¿Qué ofrecemos?</h1><br>
 
 		<!-- Tabla de Servicios -->
-		<table class="table table-dark">
+		<table class="table">
 		  	<thead>
 		    	<tr>
 		      		<th scope="col">#</th>
@@ -68,9 +72,9 @@
 			    	</td>
 			    	<td>
 			    		<ol>
-							<li><a href="https://www.youtube.com/watch?v=AOP9cyVuUvo" target="_blank">Mi vida entera</a></li>
-							<li><a href="https://www.youtube.com/watch?v=LRP8d7hhpoQ" target="_blank">Aleluya (Shrek)</a></li>
-							<li><a href="https://www.youtube.com/watch?v=7iU8jFmqmiQ" target="_blank">Canción de amor - Aristimuño</a></li>
+							<li><a href="https://www.youtube.com/watch?v=AOP9cyVuUvo" target="_blank" class="sobreClickLink">Mi vida entera</a></li>
+							<li><a href="https://www.youtube.com/watch?v=LRP8d7hhpoQ" target="_blank" class="sobreClickLink">Aleluya (Shrek)</a></li>
+							<li><a href="https://www.youtube.com/watch?v=7iU8jFmqmiQ" target="_blank" class="sobreClickLink">Canción de amor - Aristimuño</a></li>
 						</ol>
 			    	</td>
 			    </tr>
@@ -86,9 +90,9 @@
 		    		</td>
 		    		<td>
 		    			<ol>
-							<li><a href="https://www.youtube.com/watch?v=dvgZkm1xWPE" target="_blank">Viva la vida - Coldplay</a></li>
-							<li><a href="https://www.youtube.com/watch?v=Ju8Hr50Ckwk" target="_blank">If I Ain´t Got You - Alicia Keys</a></li>
-							<li><a href="https://www.youtube.com/watch?v=Edwsf-8F3sI" target="_blank">Feeling Good - Michael Bublé</a></li>
+							<li><a href="https://www.youtube.com/watch?v=dvgZkm1xWPE" target="_blank" class="sobreClickLink">Viva la vida - Coldplay</a></li>
+							<li><a href="https://www.youtube.com/watch?v=Ju8Hr50Ckwk" target="_blank" class="sobreClickLink">If I Ain´t Got You - Alicia Keys</a></li>
+							<li><a href="https://www.youtube.com/watch?v=Edwsf-8F3sI" target="_blank" class="sobreClickLink">Feeling Good - Michael Bublé</a></li>
 						</ol>
 		    		</td>
 		    	</tr>
@@ -104,9 +108,9 @@
 					</td>
 		    		<td>
 		    			<ol>
-							<li><a href="https://www.youtube.com/watch?v=tbneQDc2H3I" target="_blank">Tusa - Karol G</a></li>
-							<li><a href="https://www.youtube.com/watch?v=oPlPDL6mu4w" target="_blank">Diosa - Myke Towers</a></li>
-							<li><a href="https://www.youtube.com/watch?v=Er3amRbqlMM" target="_blank">Dime si eres feliz - La Champions Liga</a></li>
+							<li><a href="https://www.youtube.com/watch?v=tbneQDc2H3I" target="_blank" class="sobreClickLink">Tusa - Karol G</a></li>
+							<li><a href="https://www.youtube.com/watch?v=oPlPDL6mu4w" target="_blank" class="sobreClickLink">Diosa - Myke Towers</a></li>
+							<li><a href="https://www.youtube.com/watch?v=Er3amRbqlMM" target="_blank" class="sobreClickLink">Dime si eres feliz - La Champions Liga</a></li>
 						</ol>
 		    		</td>
 		    	</tr>
@@ -117,9 +121,22 @@
 	</main>
 
 	<!-- Pie de página -->
-	<footer class="fondoGris anchoCompleto">
-		<p class="centrado">Copyright - Altro-Ke®</p>
+	<footer>
+		<div class="container-fluid fondoGris">
+			<div class="row justify-content-md-center altura">
+		    	<div class="col-md-auto">
+		    		Copyright - Altro-Ke®
+		    	</div>
+		  	</div>
+			<div class="row justify-content-md-center alturaDos">
+		    	<div class="col-md-auto">
+		      		<a href="https://www.instagram.com/altro_ke" target="_blank"><img src="img/instagramdos.png" alt="logo de instagram" class="imagenLink img-fluid" ></a>
+		      		<a href="https://www.facebook.com/Altro-Ke-1485898511546734" target="_blank"><img src="img/facebookdos.png" alt="logo de instagram" class="imagenLink img-fluid"></a>
+		    	</div>
+		  	</div>
+		</div>
 	</footer>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

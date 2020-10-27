@@ -17,11 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
 </head>
 <body>
-	<div>
-		<!-- Logo Principal -->
-		<header>
-			<a href="index.html"><img src="img/imgaltro1.jpg" alt="Logo Altro-Ke" class="logo sobreClick"></a>
-		</header>
+	<header class="positionSticky">
 
 		<!-- Barra de Menú -->
 		<nav class="navbar navbar-expand-lg">		
@@ -32,10 +28,18 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto tituloNav centrado" id="menu">
 		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="index.html">Home</a>
+		        		<a class="navbar-brand sobreClick" href="index.html">
+    						<img src="img/imgaltrologo.png" width="90" height="40" alt="Logo">
+  						</a>
 		     		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link sobreClick" href="nosotros.html">Nosotros</a>
+		      		<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle sobreClick" href="nosotros.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Nosotros
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#general">Inspiración</a>
+				          <a class="dropdown-item sobreClickLink" href="nosotros.html#conocenos">Conocenos</a>
+				        </div>	        		
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link sobreClick" href="tumusica.html">¿Qué ofrecemos?</a>
@@ -49,21 +53,10 @@
 		    	</ul>
 			</div>
 		</nav>
-	</div>
+	</header>
 
-	<main>
+	<main class="imagenFondo">
 		<h1 class="titulo marginGal">Galería</h1>
-		
-		<!-- Fotos y Videos
-		<section class="padreFlex2">
-			<img src="img/matiagus.jpg" alt="Foto de Altro-Ke" class="imagen"><br>
-			<video controls preload="auto" class="video">
-				<source src="vid/video1.mp4">
-				Este es un video de Altro Ke cantando
-			</video>
-			<img src="img/matinosotros.jpg" alt="Foto de Altro-Ke" class="imagen">
-			<img src="img/agusnosotros.jpg" alt="Foto de Altro-Ke" class="imagen">
-		</section> -->
 
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
@@ -88,8 +81,21 @@
 		</div>
 	</main>
 
-	<footer class="fondoGris anchoCompleto">
-		<p class="centrado">Copyright - Altro-Ke®</p>
+	<!-- Pie de página -->
+	<footer>
+		<div class="container-fluid fondoGris">
+			<div class="row justify-content-md-center altura">
+		    	<div class="col-md-auto">
+		    		Copyright - Altro-Ke®
+		    	</div>
+		  	</div>
+			<div class="row justify-content-md-center alturaDos">
+		    	<div class="col-md-auto">
+		      		<a href="https://www.instagram.com/altro_ke" target="_blank"><img src="img/instagramdos.png" alt="logo de instagram" class="imagenLink img-fluid" ></a>
+		      		<a href="https://www.facebook.com/Altro-Ke-1485898511546734" target="_blank"><img src="img/facebookdos.png" alt="logo de instagram" class="imagenLink img-fluid"></a>
+		    	</div>
+		  	</div>
+		</div>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

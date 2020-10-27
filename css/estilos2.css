@@ -8,7 +8,7 @@ html {
 
 /*CSS para index y en general*/
 body {
-  background-color: black; }
+  background-color: white; }
 
 .logo {
   display: block;
@@ -16,42 +16,48 @@ body {
   margin-bottom: 0rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: white;
   width: 10%;
   height: 10%; }
+
+.nav-link {
+  display: block;
+  padding: 0.7rem 1rem; }
 
 .positionSticky {
   position: sticky;
   top: 0px;
-  background-color: black;
+  background-color: #7a1039;
   z-index: 3; }
 
 .centrado {
   margin: auto;
   text-align: center;
-  padding: 10px;
-  background-color: black; }
-
-.titulo {
-  font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
-  font-weight: bold;
-  color: #7a1039;
-  font-size: 3.3rem;
-  text-shadow: 2px 2px #4a0721; }
+  padding: auto;
+  padding-top: 0px; }
 
 .tituloNav {
   font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
-  font-weight: bold;
-  color: #7a1039;
-  font-size: 3.3rem;
-  text-shadow: 2px 2px #110c6b; }
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px #4a0721; }
 
 a {
   text-decoration: none;
-  color: #dcdcde; }
+  color: black; }
+
+td ol li a {
+  text-decoration: none;
+  color: #4a0721; }
+
+.sobreClickLink:hover {
+  transform: scale(1.1, 1.1);
+  position: relative;
+  color: #7a1039; }
 
 .colorTextoBoton {
-  color: #dcdcde;
+  color: black;
   font-size: 3.3rem;
   text-align: center;
   font-family: Baronneuebold, Bahnschrift Light, Century Gothic; }
@@ -62,29 +68,34 @@ a {
 #menu li {
   display: inline-block;
   flex-flow: row wrap;
-  padding-left: 3px;
-  padding-right: 3px;
-  font-size: 2rem; }
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  font-size: 1.7rem; }
 
 nav ul li {
   color: #7a1039; }
 
 .pantallaCompleta {
-  width: 100vw;
-  height: 100vh; }
+  width: 98.72vw;
+  height: 99vh; }
 
 .imagenLink {
-  width: 10%;
-  height: 10%;
-  margin-left: 2rem;
-  padding: auto; }
+  width: 28px;
+  height: 28px; }
+
+.altura {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.alturaDos {
+  padding-top: 5px;
+  padding-bottom: 15px; }
 
 .textoLink {
   font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
-  color: #f0f0f7;
-  background-color: black;
+  color: white;
   font-size: 1.5rem;
-  margin-left: 2rem; }
+  margin-left: auto; }
 
 .tamañoTabla {
   width: 95vw;
@@ -93,7 +104,7 @@ nav ul li {
   border-color: #7a1039; }
 
 .table {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 caption {
   display: none; }
@@ -109,7 +120,7 @@ caption {
 
 .padreGrid {
   display: grid;
-  grid-template-areas: "vacio vacio" "vacio vacio" "vacio vacio" "face inst" "textoface textoinst";
+  grid-template-areas: "vacio vacio" "vacio vacio" "vacio vacio"  "face inst" "textoface textoinst";
   grid-template-rows: 5fr 5fr 5fr 2fr 2fr;
   grid-template-columns: 1fr 1fr;
   text-align: center; }
@@ -130,7 +141,7 @@ caption {
   grid-area: textoinst; }
 
 .fondoLogo {
-  background-image: url(../img/logoblack.jpg);
+  background-image: url(../img/matiagusdos.jpg);
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -138,7 +149,13 @@ caption {
   transform: scale(1.1, 1.1);
   position: relative;
   z-index: 2;
-  color: #1f139e; }
+  color: white; }
+
+.paginaActiva {
+  transform: scale(1.1, 1.1);
+  position: relative;
+  z-index: 2;
+  color: white; }
 
 .slogan {
   color: #7a1039;
@@ -152,35 +169,50 @@ caption {
 /*CSS para páginas*/
 .textoComun {
   font-family: Bahnschrift Light, Century Gothic;
-  color: #f0f0f7;
-  background-color: black;
-  font-size: 2rem; }
+  color: #110c6b;
+  background-color: white;
+  font-size: 1.3rem; }
 
 h6 {
   font-family: Bahnschrift Light, Century Gothic;
-  color: #f0f0f7;
-  background-color: black;
+  color: #110c6b;
+  background-color: white;
   font-size: 2rem; }
 
 .textoForm {
   font-family: Bahnschrift Light, Century Gothic;
-  color: #f0f0f7;
-  background-color: black;
+  color: #110c6b;
   font-size: 1.3rem;
   padding-left: 2rem; }
 
-.autorDeCita {
-  font-family: Bahnschrift Light;
-  font-weight: lighter;
-  letter-spacing: 1px;
+.botonEnviar {
+  font-family: Bahnschrift Light, Century Gothic;
+  font-size: 1.3rem;
+  margin: 1rem;
+  background-color: #7a1039;
+  border-color: #4a0721; }
+
+.botonBorrar {
+  font-family: Bahnschrift Light, Century Gothic;
+  font-size: 1.3rem;
+  margin: 1rem;
+  background-color: #dcdcde;
+  border-color: #b4b4b4;
   color: #7a1039; }
+
+.citasEnTextoDos {
+  font-family: Bahnschrift Light;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #7a1039;
+  text-transform: uppercase; }
 
 .citasEnTexto {
   font-family: Bahnschrift Light;
-  font-weight: lighter;
-  text-decoration: underline;
+  font-weight: bold;
   letter-spacing: 1px;
-  color: #7a1039; }
+  color: #17108f;
+  text-transform: uppercase; }
 
 .noLista {
   list-style-type: none;
@@ -189,7 +221,7 @@ h6 {
 
 .fondoGris {
   background-color: #2f2f30;
-  color: #f0f0f7;
+  color: #dcdcde;
   font-family: Bahnschrift Light;
   font-style: bold;
   font-size: 1.25rem; }
@@ -212,20 +244,19 @@ caption, h3 {
   color: #17108f;
   font-family: Bahnschrift Light;
   font-size: 3rem;
-  text-shadow: 2px 2px #110c6b;
+  text-shadow: 2px 2px 2px #110c6b;
   text-transform: uppercase; }
 
 ul, ol {
-  color: #f0f0f7;
+  color: #110c6b;
   font-family: Bahnschrift Light;
-  font-size: 1.55rem;
+  font-size: 2rem;
   list-style-type: none; }
 
 /*CSS para FlexBox*/
 .padreFlex2 {
   display: flex;
-  flex-flow: row nowrap;
-  width: 100vw; }
+  flex-flow: row nowrap; }
 
 @keyframes aparecer {
   0% {
@@ -270,6 +301,16 @@ ul, ol {
   height: 30%;
   width: 30%;
   transition: all 1s; }
+
+.card {
+  background-color: white;
+  padding: auto; }
+
+.card-body {
+  color: #110c6b; }
+
+.card-title {
+  text-shadow: 0.5px 0.5px 1px black; }
 
 .marginGal {
   margin-left: 3rem;
@@ -321,21 +362,80 @@ ul, ol {
   box-shadow: 3px 3px 2px #4a0721;
   border-radius: 5%; }
 
+.reduce {
+  height: 75%;
+  width: 75%; }
+
+.aclarar {
+  opacity: 100%; }
+
+.card-title {
+  font-size: 2.8rem;
+  font-family: Bahnschrift Light; }
+
+.card-text {
+  font-size: 1.5rem;
+  font-family: Bahnschrift Light; }
+
+.card-body {
+  text-align: center; }
+
+/*.card-img-dos   {
+	height: 105vh;
+}*/
+.titulo {
+  font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
+  font-weight: bold;
+  color: #7a1039;
+  font-size: 3.3rem;
+  text-shadow: 2px 2px 2px #4a0721; }
+
+.tituloDos {
+  font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
+  color: #7a1039;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px #4a0721;
+  margin: 5px;
+  padding: 4px; }
+
+.imagenFondo {
+  background-image: url(../img/imagefondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: black; }
+
 .carousel {
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 40%;
+  max-width: 40%;
   text-align: center;
   padding-right: auto;
   padding-left: auto;
-  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto; }
 
 .anchoCompleto {
   width: 100vw; }
 
+.blanco {
+  color: #dcdcde;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem; }
+
+.espacio {
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.dropdown-menu {
+  background-color: #7a1039; }
+
+.dropdown-item {
+  background-color: #7a1039;
+  color: black;
+  text-shadow: 1px 1px 1px #4a0721; }
+
 /* Medias Query */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   nav ul li a {
     font-size: 1.6rem; }
   .logo {
@@ -352,8 +452,8 @@ ul, ol {
     align-content: center;
     justify-content: center; }
   .imagenLink {
-    width: 15%;
-    height: 15%; }
+    width: 10px;
+    height: 10px; }
   .textoLink {
     font-size: 10px;
     align-items: flex-end; }
@@ -393,4 +493,9 @@ ul, ol {
     height: 201.5px;
     width: 151px;
     border-style: solid;
-    border-color: #7a1039; } }
+    border-color: #7a1039; }
+  .blanco {
+    color: #dcdcde;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.5rem; } }
