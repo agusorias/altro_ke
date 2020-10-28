@@ -593,6 +593,10 @@ ul, ol {
 		align-items: flex-end;
 	}
 
+	.textoComun {
+		font-size: 1rem;
+	}
+
 	.fondoLogo {
 		background-image: url(none);
 	}
@@ -608,6 +612,167 @@ ul, ol {
 	.imagenBanda .imagenBandaDos {
 		width: 15%;
 		height: 15%;
+	}
+
+	.informacion {
+	display: grid;
+	grid-template-areas: 
+		"quien"
+		"texto"
+		"imguno"
+		"infouno"
+		"imgdos"
+		"infodos";
+	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 1fr;
+	text-align: center;
+	}
+
+	#nosotros {
+		grid-area: quien;
+	}
+
+	#textonosotros {
+		grid-area: texto;
+	}
+
+	#imagenuno {
+		grid-area: imguno;
+	}
+
+	#imagendos {
+		grid-area: imgdos;
+	}
+
+	#infouno {
+		grid-area: infouno;
+	}
+
+	#infodos {
+		grid-area: infodos;
+	}
+
+	.imagenBanda {
+		height: 403px * 0.5;
+		width: 302px * 0.5;
+		border-style: solid;
+		border-color: $morado;
+	}
+
+	.imagenBandaDos {
+		height: ($alto + 3px) * 0.5;
+		width: ($ancho + 2px) * 0.5;
+		border-style: solid;
+		border-color: $morado;
+	}
+
+	.blanco  {
+		color: $gris;
+		text-align: center;
+		font-size: 1.3rem;
+		padding: 0.5rem;
+	}
+
+	ul, ol {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 0.8rem; 
+		list-style-type: none;
+	}
+
+	table {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 0.8rem; 
+		list-style-type: none;
+	}
+
+	.table {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 1rem; 
+		list-style-type: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li a { 
+		font-size: 1rem;
+	}
+
+	ul, ol {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 0.5rem; 
+		list-style-type: none;
+	}
+
+	table {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 0.7rem; 
+		list-style-type: none;
+	}
+
+	.table {
+		color: $azulOsc;
+		font-family: Bahnschrift Light;
+		font-size: 0.7rem; 
+		list-style-type: none;
+	}
+
+	.logo {
+		width: 20%;
+		height: 20%;
+	}
+
+	.titulo {
+		font-family: Baronneuebold, Bahnschrift Light, Century Gothic;
+		font-size: 3rem;
+	}
+
+	.textoComun .textoLink .textoForm {
+		font-family: Bahnschrift Light, Century Gothic;
+		font-size: 1.5rem;
+	}
+
+	.slogan {
+		display: inline-block;
+		width: 100vw;
+		font-size: 50px;
+		letter-spacing: 1.5px;
+		padding-top: 30rem;
+		margin-bottom: auto;
+		text-align: center;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.imagenLink {
+		width: 10px;
+		height: 10px;
+	}
+
+	.textoLink {
+		font-size: 10px;
+		align-items: flex-end;
+	}
+
+	.fondoLogo {
+		background-image: url(none);
+	}
+
+	.pantallaCompleta {
+		height: 100vh;
+	}
+
+	.informacion__item #imagenuno #infouno #imagendos #infodos {
+		width: 100vw;
+	}
+
+	.imagenBanda .imagenBandaDos {
+		width: 35%;
+		height: 35%;
 	}
 
 	.informacion {
